@@ -41,9 +41,9 @@ Frontend
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
-shopping-cart-dashboard
+shoppingcart
 
 ```
 config/
@@ -65,7 +65,7 @@ package.json
 ### 1️⃣ Clone the repository
 
 ```
-git clone https://github.com/your-username/shopping-cart-dashboard.git
+git clone https://github.com/SenthilkumarNarayanan/nodejs_certification_jwt_RBAC.git
 ```
 
 ### 2️⃣ Navigate to project
@@ -108,7 +108,7 @@ http://localhost:5000
 
 ---
 
-# 🌐 Frontend URLs
+# Frontend URLs
 
 | Page        | URL                                   |
 | ----------- | ------------------------------------- |
@@ -170,7 +170,7 @@ POST /api/users/add
 
 ---
 
-# 🔐 Authentication
+# Authentication
 
 Protected APIs require JWT token.
 
@@ -182,7 +182,7 @@ Authorization: Bearer <token>
 
 ---
 
-# 🧪 API Testing
+# API Testing
 
 APIs can be tested using:
 
@@ -199,7 +199,7 @@ Testing flow:
 
 ---
 
-# 👨‍💻 Admin Setup
+#  Admin Setup
 
 The first admin user must be inserted manually in the database.
 
@@ -216,7 +216,7 @@ Example document:
 
 ---
 
-# 📌 Future Improvements
+# Future Improvements
 
 * Shopping cart functionality
 * Product image upload
@@ -226,6 +226,3 @@ Example document:
 
 ---
 
-# 📄 License
-
-This project is created for learning and demonstration purposes.
