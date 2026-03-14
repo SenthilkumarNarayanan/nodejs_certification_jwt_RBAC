@@ -1,0 +1,231 @@
+# Shopping Cart Dashboard
+
+A full-stack Shopping Cart Dashboard built using **Node.js, Express.js, MongoDB, JWT authentication, and Bootstrap**.
+
+The application provides role-based access for **Admin** and **Normal Users**.
+
+---
+
+#Features
+
+### Admin
+
+* View shopping list
+* Add new products
+* View all users
+* Add new users (Admin or Normal)
+
+### Normal User
+
+* Register account
+* Login
+* View shopping list
+
+---
+
+#Tech Stack
+
+Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* JWT Authentication
+* bcrypt password hashing
+
+Frontend
+
+* HTML
+* Bootstrap
+* JavaScript
+
+---
+
+# 📂 Project Structure
+
+shopping-cart-dashboard
+
+```
+config/
+controllers/
+middleware/
+models/
+routes/
+views/
+public/
+server.js
+package.json
+.env
+```
+
+---
+
+# Installation
+
+### 1️⃣ Clone the repository
+
+```
+git clone https://github.com/your-username/shopping-cart-dashboard.git
+```
+
+### 2️⃣ Navigate to project
+
+```
+cd shopping-cart-dashboard
+```
+
+### 3️⃣ Install dependencies
+
+```
+npm install
+```
+
+### 4️⃣ Create .env file
+
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+### 5️⃣ Run the server
+
+```
+node server.js
+```
+
+or
+
+```
+npm run dev
+```
+
+Server runs at:
+
+```
+http://localhost:5000
+```
+
+---
+
+# 🌐 Frontend URLs
+
+| Page        | URL                                   |
+| ----------- | ------------------------------------- |
+| Login       | http://localhost:5000/login.html      |
+| Register    | http://localhost:5000/register.html   |
+| Dashboard   | http://localhost:5000/dashboard.html  |
+| Add Product | http://localhost:5000/addProduct.html |
+| User List   | http://localhost:5000/users.html      |
+
+---
+
+# 🔗 API Endpoints
+
+### Authentication
+
+Register User
+
+```
+POST /api/auth/register
+```
+
+Login
+
+```
+POST /api/auth/login
+```
+
+---
+
+### Products
+
+Get Products
+
+```
+GET /api/products
+```
+
+Add Product (Admin only)
+
+```
+POST /api/products/add
+```
+
+---
+
+### Users
+
+Get All Users (Admin)
+
+```
+GET /api/users
+```
+
+Add User (Admin)
+
+```
+POST /api/users/add
+```
+
+---
+
+# 🔐 Authentication
+
+Protected APIs require JWT token.
+
+Example header:
+
+```
+Authorization: Bearer <token>
+```
+
+---
+
+# 🧪 API Testing
+
+APIs can be tested using:
+
+* Postman
+* Thunder Client (VS Code)
+
+Testing flow:
+
+1 Register user
+2 Login user
+3 Copy JWT token
+4 Test product APIs
+5 Test admin APIs
+
+---
+
+# 👨‍💻 Admin Setup
+
+The first admin user must be inserted manually in the database.
+
+Example document:
+
+```
+{
+"name":"Admin",
+"email":"admin@gmail.com",
+"password":"bcrypt_hashed_password",
+"role":"admin"
+}
+```
+
+---
+
+# 📌 Future Improvements
+
+* Shopping cart functionality
+* Product image upload
+* Admin dashboard UI
+* Pagination & search
+* API validation
+
+---
+
+# 📄 License
+
+This project is created for learning and demonstration purposes.
